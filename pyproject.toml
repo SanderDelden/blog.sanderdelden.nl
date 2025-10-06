@@ -1,0 +1,22 @@
+[project]
+name =  "blog.sanderdelden.nl"
+version = "1.0.0"
+authors = [
+    {name = "Sander van Delden", email = "s@nder.in"},
+]
+description = "Network (Automation) Blog."
+readme = "README.md"
+requires-python = ">=3.13.0"
+dependencies = [
+    "mkdocs-glightbox==0.5.1",
+    "mkdocs-material==9.6.20",
+    "mkdocs-minify-plugin==0.8.0",
+    "mkdocs-spellcheck==1.1.2",
+    "mkdocs==1.6.1",
+]
+
+[dependency-groups]
+dev = [
+    "toml",
+    "yamllint==1.37.1",
+]
