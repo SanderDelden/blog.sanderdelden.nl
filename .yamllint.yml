@@ -1,0 +1,11 @@
+extends: default
+
+ignore: |
+  .venv/**/*.yml
+
+rules:
+  document-start: disable
+  indentation:
+    indent-sequences: consistent
+  line-length:
+    max: 120
