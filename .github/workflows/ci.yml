@@ -6,11 +6,18 @@ jobs:
   lint:
     name: Use super-linter to lint all code
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
     steps:
     - name: Checkout repository
       uses: actions/checkout@v5
+      with:
+        fetch-depth: 0
+        persist-credentials: false
     - name: Lint code base
-      uses: github/super-linter@v4
+      uses: super-linter/super-linter@v8
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         LINTER_RULES_PATH: .
