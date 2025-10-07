@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+  .error-container {
+    text-align: center;
+    padding: 1rem 2rem;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .error-message {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+    color: var(--md-typeset-color);
+    opacity: 0.8;
+    max-width: 600px;
+  }
+
+  .error-gif {
+    margin: 1rem 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 60%;
+    height: auto;
+  }
+
+  .fun-facts {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: var(--md-code-bg-color);
+    border-radius: 8px;
+    max-width: 600px;
+  }
+
+  .fun-facts h3 {
+    margin-top: 0;
+    color: var(--md-typeset-color);
+  }
+
+  .fun-facts p {
+    margin: 0.5rem 0;
+    color: var(--md-typeset-color);
+    opacity: 0.9;
+  }
+</style>
+
+<div class="error-container">
+  <p class="error-message">
+    No route in the DFZ found to this destination, looks like we ended up in /dev/null ...
+  </p>
+
+  <img
+    src="https://media1.tenor.com/m/lx2WSGRk8bcAAAAC/pulp-fiction-john-travolta.gif"
+    alt="Confused Travolta"
+    class="error-gif"
+    loading="lazy"
+  />
+
+  <div class="fun-facts">
+    <h3>💡 Fun fact</h3>
+    <p id="fun-fact"></p>
+  </div>
+</div>
+
+<script>
+  const funFacts = [
+    "HTTP 404 was named after room 404 at CERN where the World Wide Web was invented... Unfortunately, that's a myth. The 4xx status codes simply indicate client errors.",
+    "The first 404 error message was probably created by Tim Berners-Lee at CERN in 1992. Talk about a legacy bug! 🐛",
+    "BGP can have up to 255 AS hops in a path, but this page? Not even in the routing table! 📋",
+    "Did you know? There are over 1.1 billion websites on the internet, and you managed to find one that doesn't exist. That's statistically impressive! 📊",
+    "In the time it took you to read this, approximately 6,000 tweets were sent, 2.5 million emails were sent, and this page still doesn't exist. 🚀",
+    "A packet's journey through the internet can span multiple continents in milliseconds, but this page's journey? Straight to nowhere! 🌍",
+    "The average website has about 50-100 pages. You found number 101. Or did you? 🤔"
+  ];
+
+  const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
+  document.getElementById('fun-fact').textContent = randomFact;
+</script>
+{% endblock %}
