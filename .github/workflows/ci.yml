@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
     - name: Lint code base
       uses: github/super-linter@v4
       env:
@@ -27,7 +27,7 @@ jobs:
     needs: lint
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
     - name: Set up UV
       uses: astral-sh/setup-uv@v6
     - name: Install dependencies
