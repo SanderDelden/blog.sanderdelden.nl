@@ -15,6 +15,17 @@ extra:
   annotate:
     json: [.s2]
     bash: [.s2]
+  consent:
+    description: >-
+      This site uses cookies to improve your experience. Some cookies
+      are essential for features like GitHub integrations, while others
+      help by analyzing traffic through Google Analytics. By continuing
+      to browse, you agree to the use of cookies.
+    actions:
+    - accept
+    - reject
+    - manage
+    title: Cookie consent
   generator: false
   social:
   - icon: fontawesome/brands/square-linkedin
