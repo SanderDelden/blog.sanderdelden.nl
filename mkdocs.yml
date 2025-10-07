@@ -22,9 +22,6 @@ extra:
   - icon: fontawesome/brands/square-github
     link: https://github.com/sanderdelden
 
-extra_javascript:
-- javascripts/extra.js
-
 hooks:
 - blog/hooks/hooks.py
 
