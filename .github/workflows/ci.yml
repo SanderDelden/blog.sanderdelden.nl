@@ -68,4 +68,4 @@ jobs:
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        command: pages deploy site/ --project-name=blog-sanderdelden-nl
+        command: pages deploy site/ --project-name=blog-sanderdelden-nl --branch ${{ github.ref_name }} --commit-hash ${{ github.sha }}  # yamllint disable-line rule:line-length
