@@ -44,7 +44,7 @@ jobs:
       env:
         GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
     - name: Upload site artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: site
         path: site/
