@@ -60,7 +60,7 @@ jobs:
       deployments: write
     steps:
     - name: Download site artifacts
-      uses: actions/download-artifact@v5
+      uses: actions/download-artifact@v6
       with:
         name: site
         path: site/
