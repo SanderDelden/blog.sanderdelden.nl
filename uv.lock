@@ -49,7 +49,7 @@ requires-dist = [
     { name = "mkdocs-glightbox", specifier = "==0.5.2" },
     { name = "mkdocs-material", specifier = "==9.6.23" },
     { name = "mkdocs-minify-plugin", specifier = "==0.8.0" },
-    { name = "mkdocs-spellcheck", specifier = "==1.1.2" },
+    { name = "mkdocs-spellcheck", specifier = "==1.2.0" },
 ]
 
 [package.metadata.requires-dev]
@@ -316,14 +316,14 @@ wheels = [
 
 [[package]]
 name = "mkdocs-spellcheck"
-version = "1.1.2"
+version = "1.2.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "mkdocs" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/79/28/3f52d27adf3e352099388608bccfac84b30e886ca6f7b0cb01d2eb4ef5ae/mkdocs_spellcheck-1.1.2.tar.gz", hash = "sha256:66ff4a3b82b9399dbeacdf5516698406fbdcb5b654b64fec584b185514181c79", size = 33719, upload-time = "2025-08-05T12:03:15.292Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a1/a7/0ac729c3fbcb6606898857eb5683cdb47bbc7956caaf3487b34ff3448774/mkdocs_spellcheck-1.2.0.tar.gz", hash = "sha256:a92ac545f7e363236700c7ac24e06872cb12e0b75075b351b60870c3d879ed94", size = 34543, upload-time = "2025-12-01T14:40:40.022Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/17/db/8c957ebe8caa2d58f0df985e2ed10dd0d9d096fb6ca2eedb32f2228c66c3/mkdocs_spellcheck-1.1.2-py3-none-any.whl", hash = "sha256:947644eb2b9b8c06740d7f693838edca1fa195b198c455337648977c9a86f039", size = 13643, upload-time = "2025-08-05T12:03:13.828Z" },
+    { url = "https://files.pythonhosted.org/packages/60/fe/d93bde60e7544ddb65b28e599a6ce80d095ee021414d5cbc4079010cce05/mkdocs_spellcheck-1.2.0-py3-none-any.whl", hash = "sha256:e8ab260717bddf0ec2d1926aeb22e4bba80dc066a640ef884ba4c7c5a2140614", size = 14044, upload-time = "2025-12-01T14:40:38.556Z" },
 ]
 
 [[package]]
