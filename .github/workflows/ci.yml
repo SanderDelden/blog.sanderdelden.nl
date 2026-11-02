@@ -17,7 +17,7 @@ jobs:
         fetch-depth: 0
         persist-credentials: false
     - name: Lint code base
-      uses: super-linter/super-linter@v8
+      uses: super-linter/super-linter@v9
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         LINTER_RULES_PATH: .
